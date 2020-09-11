@@ -1,0 +1,57 @@
+[
+  {
+    "fullName": "Best Tester",
+    "login": "besttesterever12@gmail.com",
+    "password": "besttester20200828",
+    "gmailCredentials": {
+      "clientId": "837665962375-l73tc8tnspu162hqsuv3csl3amtaqen1.apps.googleusercontent.com",
+      "clientSecret": "y_o-qdPE0Wyl0Sym_vY6uRAt",
+      "accessToken": "ya29.a0AfH6SMCAfrfwI1mXSLOZ3ttn8K51CkK9nngtoXbBLCtO0FbTtHIZR7fP6gV4c9Y-YlQy8_rFeTdiQFiUpE5xkgr5ew70U0J62JVx2uZWCPfIdjLMUA3enSKchjGaZKxYR9ax0caNfPq1wxYQbe-ShuU5ywGTzl6CPYc",
+      "refreshToken": "1//09aB0x8kz3yB6CgYIARAAGAkSNwF-L9IrClhbE57ur5Pp1R6qy2I-tB7okO6iLQ3ncryzxYzdkjdWHB2FuytVHM7C7xGb-CBxvgw"
+    }
+  },
+  {
+    "fullName": "Test Base",
+    "login": "basetestjava@gmail.com",
+    "password": "baseTestjava1",
+    "gmailCredentials": {
+      "clientId": "524143074303-infj24cbgc070uuo9rhbkr8is82vup49.apps.googleusercontent.com",
+      "clientSecret": "prp30E5uiv_OKdMQ-526QPyQ",
+      "accessToken": "ya29.a0AfH6SMDahJMsVha-ukAB7LAFzenoP5XwobpdVcskzHAB4qOPIVu5KmZ-VvkN5O5C8usZ0YTppLIQZgOZIJSdlgmsfTkbe49_Q-Ctic0aissJB9fMNQbynoVGbvifCpfipFrBGWRMKNmLaqlwXf20Egs7UTX0RRmO4GA",
+      "refreshToken": "1//09lKQA1CHeAebCgYIARAAGAkSNwF-L9Irck612dD73E0_rlXSedN_hWc31gOfQBgfru-PjWZwjGyl5aO9b489Qna2FMDZyf4b26k"
+    }
+  },
+  {
+    "fullName": "Java TestSimple",
+    "login": "javatestsimple@gmail.com",
+    "password": "javaScript1290",
+    "gmailCredentials": {
+      "clientId": "655643902234-g19h04s2ut4eqb7ge956rma84e8djes4.apps.googleusercontent.com",
+      "clientSecret": "s8Vu5ZFuJkIh49O8Y7E6in_n",
+      "accessToken": "ya29.a0AfH6SMDnnTtdNM3udB0X2N10m_iTvtno6poiZjfWmZEZsOohnqvO8oyrolefrb62ES-6ax9jJa2vF-WDzx0uUgnl-zvRMCVyTrNHwT-C9pHm1I0yEpDaVO9ezazobQrf6wKfcSYxAbGKK8GhdSfVqi0JO_KXHfxv-5s",
+      "refreshToken": "1//09og7Uc7n4BhCCgYIARAAGAkSNwF-L9IrSMsw3JHHX1-5w9zEYTxz51KRsKDG1o4_UTY5YpVkYlpQKkAvqa_AqzOTer2uOvqLgqQ"
+    }
+  },
+  {
+    "fullName": "Jonny Cucumber",
+    "login": "cucumberjonny@gmail.com",
+    "password": "jonnyCucu123ber",
+    "gmailCredentials": {
+      "clientId": "353574076203-jgebj7096r1p2h9bvpnrtaj4h5a9o7r9.apps.googleusercontent.com",
+      "clientSecret": "4mpYFDTld8k9kg_363Cvs1Q2",
+      "accessToken": "ya29.a0AfH6SMCFFxk8Gq28rphWk5ZaNEAf41F2Tj2B-Yp0dtAJR0qUBxm0iAmbbuzUZ83W1DlD1FxsPGQ921bkQwgQ7li9BNaP0mdkb75WpcGOR9JS0PwpjBNtK_xu6iQk0erRWucCfKyWQwQVOLHYezTuYPUCLjOrC1ED0AU",
+      "refreshToken": "1//09tnwNveqAl4XCgYIARAAGAkSNwF-L9IrEzm9NCPtdKrsj1_S2HOLfT63aim-dK1PrAqETdL6EC8iE4f1uLlpvrAWhwySpfqM8u0"
+    }
+  },
+  {
+    "fullName": "Test5 LastTest",
+    "login": "lasttestt336@gmail.com",
+    "password": "lastTest54321",
+    "gmailCredentials": {
+      "clientId": "94073336800-3mahcmvgihs8njqarnlf9c7f7h1qnpm9.apps.googleusercontent.com",
+      "clientSecret": "PepfZUBj6G0LUjbXwrTnqeo1",
+      "accessToken": "ya29.a0AfH6SMA7ap1yp1PXKinZEZ2XmrxGiv_WTOYLBxopsm2DCJyMQF4uQxbnsfqEeUDCNAEUTaU7mL_xWCKpLtdOF4BfH6ySPuooHt0Umd-kdITV5uzvBH26xItGq2GlE9cRCnNn2bcQtpjy018EpshEp1jY7x04-FP3MFI",
+      "refreshToken": "1//03khDwCfNiGukCgYIARAAGAMSNwF-L9Ir3dZnKoxxDFDyn_1qIQGgRE0lhsKZBMySHA71Zmw36T8dFm5de4FHJq9colswFeH2rsU"
+    }
+  }
+]

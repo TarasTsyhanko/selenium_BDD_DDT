@@ -1,0 +1,11 @@
+{
+  "fullName": "Test Selenium",
+  "login": "seleniumtsyhanko@gmail.com",
+  "password": "Selenium021",
+  "gmailCredentials": {
+    "clientId": "363822960305-hv74tqu5orkgj99193rnhko2cpj6bso9.apps.googleusercontent.com",
+    "clientSecret": "val6MOlL4rFA3B6aYhDbfI3X",
+    "accessToken": "ya29.a0AfH6SMDG65vBnmEnVnEVy8IyJSFd8V2XxbuLz46MCNez4lkX0Q7poMG_Bv2pS18_UwOUvpWWYLGYmQG4NRqUKDneZInDMyGMJFHEON2k910daEiPB74EFnrGQfYu12FVFQ0qvKlvUarT8g7vIUg3h6K6s7ne8KZQFUk",
+    "refreshToken": "1//03se9NSL2IdRkCgYIARAAGAMSNwF-L9Ir8g3zytuiIUO5U1wxnzBYTnjAKiXhJDvmeZau6GntOai9t0GZ6QJ4R0TDpGYq8kEb_EA"
+  }
+}

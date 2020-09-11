@@ -1,0 +1,18 @@
+[
+  {
+    "subject": "test letter1",
+    "message": "hello world!"
+  },
+  {
+    "subject": "test letter2",
+    "message": "hello java"
+  },
+  {
+    "subject": "test letter3",
+    "message": "hello tester"
+  },
+  {
+    "subject": "test letter4",
+    "message": " hello QA"
+  }
+]
