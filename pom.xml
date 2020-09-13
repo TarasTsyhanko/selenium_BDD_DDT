@@ -7,6 +7,13 @@
     <groupId>org.example</groupId>
     <artifactId>selenium_BDD_DDT</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <aspectj.version>1.9.5</aspectj.version>
+        <cucumber.version>4.8.1</cucumber.version>
+        <allure.version>2.13.3</allure.version>
+    </properties>
+
     <build>
         <plugins>
             <plugin>
@@ -24,11 +31,12 @@
                 <version>2.20</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>src/test/resources/GmailSuit.xml</suiteXmlFile>
+                        <suiteXmlFile>src/test/resources/CucumberGmailSuit.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <argLine>
-                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/1.9.5/aspectjweaver-1.9.5.jar"
+                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
+                    <argLine>-Dcucumber.options="--plugin io.qameta.allure.cucumber4jvm.AllureCucumber4Jvm"</argLine>
                     <argLine>-Dtestng.dtd.http=true</argLine>
                     <systemProperties>
                         <property>
@@ -37,6 +45,13 @@
                         </property>
                     </systemProperties>
                 </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.aspectj</groupId>
+                        <artifactId>aspectjweaver</artifactId>
+                        <version>${aspectj.version}</version>
+                    </dependency>
+                </dependencies>
             </plugin>
             <plugin>
                 <groupId>io.qameta.allure</groupId>
@@ -102,17 +117,12 @@
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-java-commons</artifactId>
-            <version>2.13.3</version>
+            <version>${allure.version}</version>
         </dependency>
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-testng</artifactId>
-            <version>2.13.3</version>
-        </dependency>
-        <dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>aspectjweaver</artifactId>
-            <version>1.9.5</version>
+            <version>${allure.version}</version>
         </dependency>
         <dependency>
             <groupId>javax.mail</groupId>
@@ -139,30 +149,24 @@
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>info.cukes</groupId>
+            <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
-            <version>1.2.6</version>
+            <version>${cucumber.version}</version>
         </dependency>
         <dependency>
-            <groupId>info.cukes</groupId>
+            <groupId>io.cucumber</groupId>
             <artifactId>cucumber-testng</artifactId>
-            <version>1.2.6</version>
-            <exclusions>
-            <exclusion>
-                <groupId>junit</groupId>
-                <artifactId>junit</artifactId>
-            </exclusion>
-        </exclusions>
-    </dependency>
+            <version>${cucumber.version}</version>
+        </dependency>
         <dependency>
-            <groupId>info.cukes</groupId>
+            <groupId>io.cucumber</groupId>
             <artifactId>cucumber-guice</artifactId>
-            <version>1.2.6</version>
+            <version>${cucumber.version}</version>
         </dependency>
         <dependency>
             <groupId>io.qameta.allure</groupId>
-            <artifactId>allure-cucumber-jvm</artifactId>
-            <version>2.13.5</version>
+            <artifactId>allure-cucumber4-jvm</artifactId>
+            <version>${allure.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
@@ -170,4 +174,4 @@
             <version>1.8</version>
         </dependency>
     </dependencies>
-        </project>
+</project>

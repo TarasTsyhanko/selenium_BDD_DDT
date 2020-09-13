@@ -2,7 +2,6 @@ package ua.com.epam.ui.actions;
 
 import com.google.inject.Inject;
 
-import cucumber.runtime.java.guice.ScenarioScoped;
 import io.qameta.allure.Step;
 import ua.com.epam.utils.Wait;
 import ua.com.epam.ui.pages.GmailBasePage;

@@ -3,11 +3,11 @@
     <Appenders>
         <RandomAccessFile name="RandomAccessFile" fileName="src/test/resources/logs/all.log" immediateFlush="false" append="false">
             <PatternLayout>
-                <Pattern>%d %p %c{1.} [%t] %m %ex%n</Pattern>
+                <Pattern>%highlight{%d{HH:mm:ss} [%-5level] %c{1.}:%L - %msg%n}{FATAL=red, ERROR=red, WARN=yellow, INFO=black, DEBUG=green, TRACE=blue}</Pattern>
             </PatternLayout>
         </RandomAccessFile>
-        <Console name="Console" target="system_out">
-            <PatternLayout pattern="%d{yyy-MM-dd HH:mm:ss} [%-5level]  %class{1}:%L - %msg %xEx{short}%n"/>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%highlight{%d{HH:mm:ss} [%-5level] %c{1.}:%L - %msg%n}{FATAL=red, ERROR=red, WARN=yellow, INFO=black, DEBUG=green, TRACE=blue}"/>
         </Console>
     </Appenders>
     <Loggers>

@@ -1,10 +1,12 @@
 package ua.com.epam.bdd.gmailtest.step;
 
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import lombok.extern.log4j.Log4j2;
 import org.testng.Assert;
 import ua.com.epam.bdd.gmailtest.BaseTest;
 
@@ -14,8 +16,8 @@ import static ua.com.epam.constant.MessageConstant.SUCCESSFUL_DELETION_MESSAGE;
 import static ua.com.epam.constant.MessageConstant.SUCCESSFUL_MOVING_MESSAGE;
 import static ua.com.epam.constant.URLConstants.BASE_PAGE_URL;
 
+@Log4j2
 public class StepImportantLetterList extends BaseTest {
-
     @Before
     public void before() {
         setUp();
@@ -26,40 +28,41 @@ public class StepImportantLetterList extends BaseTest {
         tearDown();
     }
 
-    @When("^Log in to Gmail account with \"([^\"]*)\" and \"([^\"]*)\"$")
-    public void log_in_to_Gmail_account_with_and(String arg1, String arg2)  {
-        loginAction.logInToGmailAccount(arg1, arg2);
+    @When("Log in to Gmail account with {string} and {string}")
+    public void logInToGmailAccountWithAnd(String login, String password) {
+        loginAction.logInToGmailAccount(login, password);
     }
 
-    @And("^verify gmail main page is open$")
-    public void verify_gmail_main_page_is_open() {
+    @And("verify gmail main page is open")
+    public void verifyGmailMainPageIsOpen() {
         Assert.assertTrue(loginAction.isBasePage(BASE_PAGE_URL));
     }
 
-    @Then("^mark (\\d+) letter as important$")
-    public void mark_letter_as_important(int arg1)  {
-        importantListAction.waitLetterToBeLoaded(arg1);
-        importantListAction.moveNLettersToImportantList(arg1);
+    @Then("mark {int} letter as important")
+    public void markNLetterAsImportant(int n) {
+        importantListAction.waitLetterToBeLoaded(n);
+        importantListAction.moveNLettersToImportantList(n);
     }
 
-    @And("^Verify letter was moved to important list$")
-    public void verify_letter_was_moved_to_important_list() {
+    @And("Verify letter was moved to important list")
+    public void verifyLetterWasMovedToImportantList() {
         Assert.assertTrue(importantListAction.isDisplayedMessage());
         letterAsserter.assertMessage(importantListAction.getMessageText(), SUCCESSFUL_MOVING_MESSAGE);
     }
 
-    @Then("^Open important letters list$")
-    public void open_important_letters_list() {
+    @Then("Open important letters list")
+    public void openImportantLettersList() {
         importantListAction.openImportantLetterList();
     }
 
-    @And("^Mark (\\d+) letters and delete it$")
-    public void mark_letters_and_delete_it(int arg1) {
-        importantListAction.markNImportantLettersAndDelete(arg1);
+    @And("Mark {int} letters and delete it")
+    public void markNLettersAndDeleteIt(int n) {
+        importantListAction.markNImportantLettersAndDelete(n);
+
     }
 
-    @And("^Verify letter was deleted$")
-    public void verify_letter_was_deleted()  {
+    @And("Verify letter was deleted")
+    public void verifyLetterWasDeleted() {
         Assert.assertTrue(importantListAction.isDisplayedMessage());
         letterAsserter.assertMessage(importantListAction.getMessageText(), SUCCESSFUL_DELETION_MESSAGE);
     }
